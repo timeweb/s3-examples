@@ -127,3 +127,7 @@ Hex(SHA256Hash(<CanonicalRequest>))
 - [Node.js](https://github.com/timeweb/s3-examples/tree/master/nodejs)
 - [Python3](https://github.com/timeweb/s3-examples/tree/master/python3)
 - PHP
+
+### Примечание
+
+При использовании AWS SDK для соответствующего языка программирования необходимо чтобы формируемый урл имел вид `https://s3.timeweb.com/<имя бакета>/<имя файла>`. Например, в `PHP` при использовании `aws/aws-sdk-php` убедитесь, что в опциях стоит флаг `use_path_style_endpoint`.
